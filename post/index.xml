@@ -6,19 +6,10 @@
     <description>Recent content in Posts on edson kambeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Learning data science-the interesting way</title>
-      <link>/post/learning-data-science-the-interesting-way/</link>
-      <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/learning-data-science-the-interesting-way/</guid>
-      <description>Learning data science can be daunting task. With all the coding and the bugs, you can be easily lose the motivation to keep on learning.There are times when you are going to spend hours or even days try to figure out how the code you need to solve a problem or fix a bug. You can easily give up on learning if you find the coding and the techniques to be difficult and challenging.</description>
-    </item>
     
     <item>
       <title>Hello R Markdown</title>

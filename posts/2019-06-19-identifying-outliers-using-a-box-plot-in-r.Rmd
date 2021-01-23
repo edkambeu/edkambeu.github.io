@@ -16,40 +16,31 @@ mean(Age)
 Age1 <- Age[-1]
 mean(Age1)
 ```
-
 We can see that if an outlier is included, the average age is 22 years.However, if it is excluded, the average age is 24 years. We can observe that the outlier has resulted in an underestimation of the average age of the students. Thats why we say outliers can lead to misleading results of a statistical analysis.
 
 So how can we identify outliers in our datasets using a box plot? Lets show that by plotting a boxplot using our Age data.
-
 ```{r}
 #Plotting the box plot
 boxplot(Age, xlab = "Age of students", main = "Box Plot-Age of students")
 ```
-
 Here is a box plot shown above. In a box plot an outliers are data points that are located beyond the whiskers. The whiskers are the the two lines extending away from the box.In R, by default, these two lines extend 1.5 times the vertical distance of the box(referred to as the interquatile range). The line extending away up from the box is referred to as the upper whisker. Similarly, the line extending down from the box is referred to as the lower whisker. Any observation beyond any of the two whiskers is considered an outlier. From our box plot, we can see that there is a single outlier which is lying beyond the lower whisker. This must be the age of the student erroneously recorded as being 3 years old. But are we really sure about that?Let us determin the value of the extreme age value we are seeing in our box plot.
-
 ```{r}
 #Identify the outlier age(s)
 Outlier_ages <- boxplot(Age, xlab = "Age of students", main = "Box plot-Age of students")$out
 #Creating a vector of outlier ages 
 Outlier_ages
 ```
-
 The code chunk above has shown that the actual outlier age is 3 years. When you are dealing with large datasets you many need to know the actual position of the outlier values in your data  and then further investigate your original data sources to correct the error. You can identfy the positions of outliers by creating an index of outliers.
-
 ```{r}
 #Creating an index of outliers
 index_outliers <- which(Age %in% Outlier_ages)
 index_outliers
 ```
-
 Using the above code chunk, the outlier is observation number one in our Age vector. The first observation in our Age vector is the the 3 years that we already identified as an outlier. We can also use the index of outliers to actually identify the outlier age. We use the following code.
-
 ```{r}
 #Identifying outliers using an index of outliers
 Outlier_ages2 <- Age[index_outliers]
 Outlier_ages2
 ```
-
 As we can observe , the outlier age is still 3 years. After identifying the outliers, you can investigate further and take corrective action. 
 

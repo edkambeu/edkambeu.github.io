@@ -1,0 +1,8 @@
+---
+title: Identifying outliers using a box plot in R
+author: ''
+date: '2019-06-19'
+slug: identifying-outliers-using-a-box-plot-in-r
+categories: []
+tags: []
+---

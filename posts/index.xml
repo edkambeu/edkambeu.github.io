@@ -2,31 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on edson kambeu</title>
-    <link>/posts/</link>
+    <link>http://www.example.com/posts/</link>
     <description>Recent content in Posts on edson kambeu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 19 Jun 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www.example.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Identifying outliers using a box plot in R</title>
-      <link>/posts/identifying-outliers-using-a-box-plot-in-r/</link>
+      <link>http://www.example.com/posts/identifying-outliers-using-a-box-plot-in-r/</link>
       <pubDate>Wed, 19 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/identifying-outliers-using-a-box-plot-in-r/</guid>
+      <guid>http://www.example.com/posts/identifying-outliers-using-a-box-plot-in-r/</guid>
       <description>A box plot is used to visualize the distribution of data.We can use it to identify extreme values in a dataset, referred as outliers. The outliers are basically data values that are farthest away from other values in a distribution. Outliers can lead to misleading results in a statistical analysis.Lets say for example, you are interested in computing the average age of 10 University students whose ages(in years) were recorded as 3, 22,25,27,21, 24, 28, 19, 25, 26.</description>
     </item>
     
     <item>
       <title>Learning data science the interesting way</title>
-      <link>/posts/learning-data-science-the-interesting-way/</link>
+      <link>http://www.example.com/posts/learning-data-science-the-interesting-way/</link>
       <pubDate>Mon, 17 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>/posts/learning-data-science-the-interesting-way/</guid>
+      <guid>http://www.example.com/posts/learning-data-science-the-interesting-way/</guid>
       <description>Learning data science can be daunting task. With all the coding and the bugs, you can be easily lose the motivation to keep on learning.There are times when you are going to spend hours or even days try to figure out how the code you need to solve a problem or fix a bug. You can easily give up on learning if you find the coding and the techniques to be difficult and challenging.</description>
+    </item>
+    
+    <item>
+      <title>Render LaTeX using KaTeX</title>
+      <link>http://www.example.com/posts/render-latex-using-katex/</link>
+      <pubDate>Wed, 20 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.example.com/posts/render-latex-using-katex/</guid>
+      <description>Enable katex by adding katex = &amp;quot;true&amp;quot; to the front matter
++++ katex = &amp;#34;true&amp;#34; +++ It&amp;rsquo;s almost a dropin alternative to the mathjax solution,you should just choose one of them.
+Inline math looks like this
+This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} =1$ This is text with inline math $\sum_{n=1}^{\infty} 2^{-n} = 1$
+and with math blocks:
+$$\sum_{n=1}^{\infty} 2^{-n} =1$$ $$ \sum_{n=1}^{\infty} 2^{-n} = 1 $$</description>
     </item>
     
   </channel>

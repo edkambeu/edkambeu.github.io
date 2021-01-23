@@ -16,20 +16,20 @@
     <meta property="og:title" content="Identifying outliers using a box plot in R" />
 <meta property="og:description" content="A box plot is used to visualize the distribution of data.We can use it to identify extreme values in a dataset, referred as outliers. The outliers are basically data values that are farthest away from other values in a distribution. Outliers can lead to misleading results in a statistical analysis.Lets say for example, you are interested in computing the average age of 10 University students whose ages(in years) were recorded as 3, 22,25,27,21, 24, 28, 19, 25, 26." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/identifying-outliers-using-a-box-plot-in-r/" />
+<meta property="og:url" content="http://www.example.com/posts/identifying-outliers-using-a-box-plot-in-r/" />
 <meta property="article:published_time" content="2019-06-19T00:00:00&#43;00:00"/>
 <meta property="article:modified_time" content="2019-06-19T00:00:00&#43;00:00"/>
 
 
     
-      <base href="/posts/identifying-outliers-using-a-box-plot-in-r/">
+      <base href="http://www.example.com/posts/identifying-outliers-using-a-box-plot-in-r/">
     
     <title>
   Identifying outliers using a box plot in R · edson kambeu
 </title>
 
     
-      <link rel="canonical" href="/posts/identifying-outliers-using-a-box-plot-in-r/">
+      <link rel="canonical" href="http://www.example.com/posts/identifying-outliers-using-a-box-plot-in-r/">
     
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700" rel="stylesheet">
@@ -39,7 +39,7 @@
     
       
       
-      <link rel="stylesheet" href="/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
+      <link rel="stylesheet" href="http://www.example.com/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css" integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz&#43;DRsBr08iQK1YWABpw=" crossorigin="anonymous" media="screen" />
     
 
     
@@ -50,8 +50,8 @@
 
     
     
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="http://www.example.com/images/favicon-16x16.png" sizes="16x16">
 
     <meta name="generator" content="Hugo 0.55.2" />
   </head>
@@ -60,7 +60,7 @@
     <main class="wrapper">
       <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="/">
+    <a class="navigation-title" href="http://www.example.com">
       edson kambeu
     </a>
     <input type="checkbox" id="menu-toggle" />
@@ -69,19 +69,19 @@
       
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/about/">About</a>
+            <a class="navigation-link" href="http://www.example.com/about/">About</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/posts/">Blog</a>
+            <a class="navigation-link" href="http://www.example.com/posts/">Blog</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/projects/">Projects</a>
+            <a class="navigation-link" href="http://www.example.com/projects/">Projects</a>
           </li>
         
           <li class="navigation-item">
-            <a class="navigation-link" href="/contact/">Contact me</a>
+            <a class="navigation-link" href="http://www.example.com/contact/">Contact me</a>
           </li>
         
       
@@ -114,7 +114,7 @@
           </div>
           <div class="categories">
   <i class="fas fa-folder"></i>
-    <a href="/categories/r/">R</a></div>
+    <a href="http://www.example.com/categories/r/">R</a></div>
 
           
         </div>
@@ -138,11 +138,11 @@ mean(Age1)</code></pre>
 <p>So how can we identify outliers in our datasets using a box plot? Lets show that by plotting a boxplot using our Age data.</p>
 <pre class="r"><code>#Plotting the box plot
 boxplot(Age, xlab = &quot;Age of students&quot;, main = &quot;Box Plot-Age of students&quot;)</code></pre>
-<p><img src="/posts/2019-06-19-identifying-outliers-using-a-box-plot-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
-<p>Here is a box plot shown above. In a box plot an outliers are data points that are located beyond the whiskers. The whiskers are the the two lines extending away from the box.In R, by default, these two lines extend 1.5 times the vertical distance of the box(referred to as the interquatile range). The line extending away up from the box is referred to as the upper whisker. Similarly, the line extending down from the box is referred to as the lower whisker. Any observation beyond any of the two whiskers is considered an outlier. From our box plot, we can see that there is a single outlier which is lying beyond the lower whisker. This must be the age of the student erroneously recorded as being 3 years old. But are we really sure about that?Let us determin the value of the extreme age value we are seeing in our box plot.</p>
+<p><img src="http://www.example.com/posts/2019-06-19-identifying-outliers-using-a-box-plot-in-r_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+Here is a box plot shown above. In a box plot an outliers are data points that are located beyond the whiskers. The whiskers are the the two lines extending away from the box.In R, by default, these two lines extend 1.5 times the vertical distance of the box(referred to as the interquatile range). The line extending away up from the box is referred to as the upper whisker. Similarly, the line extending down from the box is referred to as the lower whisker. Any observation beyond any of the two whiskers is considered an outlier. From our box plot, we can see that there is a single outlier which is lying beyond the lower whisker. This must be the age of the student erroneously recorded as being 3 years old. But are we really sure about that?Let us determin the value of the extreme age value we are seeing in our box plot.</p>
 <pre class="r"><code>#Identify the outlier age(s)
 Outlier_ages &lt;- boxplot(Age, xlab = &quot;Age of students&quot;, main = &quot;Box plot-Age of students&quot;)$out</code></pre>
-<p><img src="/posts/2019-06-19-identifying-outliers-using-a-box-plot-in-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p><img src="http://www.example.com/posts/2019-06-19-identifying-outliers-using-a-box-plot-in-r_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
 <pre class="r"><code>#Creating a vector of outlier ages 
 Outlier_ages</code></pre>
 <pre><code>## [1] 3</code></pre>
@@ -197,7 +197,7 @@ Outlier_ages2</code></pre>
     
       <p>Dare to dream.</p>
     
-     © 2019
+     © 2021
     
        · 
       Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
